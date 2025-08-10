@@ -13,7 +13,7 @@ public class Exercicio09 {
         String nomeUltimo;
         String[] nomes = new String[5];
         Scanner scan = new Scanner(System.in);
-        boolean nomeEncontrado = true;
+        boolean nomeEncontrado = false;
 
         for (int contador = 0; contador < nomes.length; contador++) {
             System.out.print("Digite o " + (contador + 1) + "° nome: ");
@@ -25,14 +25,14 @@ public class Exercicio09 {
 
         for (int contador = 0; contador < nomes.length; contador++) {
             if (nomeUltimo.equals(nomes[contador])) {
-                nomeEncontrado = false;
+                nomeEncontrado = true;
             }
         }
         
         if (nomeEncontrado) {
-            System.out.println("O nome não esta na lista");
-        } else {
             System.out.println("O nome esta na lista");
+        } else {
+            System.out.println("O nome não esta na lista");
         }
     }
 }
