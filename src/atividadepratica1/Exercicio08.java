@@ -17,10 +17,16 @@ public class Exercicio08 {
         System.out.print("Digite um numero: ");
         numero = scan.nextInt();
         
-        for(int contador = 0; contador < numero; contador++ ){
+        for(int contador = 1; contador <= numero; contador++ ){
             resultado += soma;
+            if(contador != numero){
+                System.out.print(soma + " + ");
+            }
+            else{
+                System.out.print(soma);
+            }
             soma+=2;
         }
-          System.out.println(resultado);
+          System.out.print(" = " + resultado);
     }
 }
