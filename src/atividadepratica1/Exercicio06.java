@@ -19,6 +19,7 @@ public class Exercicio06 {
 
         for(int contador = numero-1; contador >= 1; contador-- ){
             resultado *= contador;
+
         }
         System.out.println("O fatorial é " + resultado);
     }
