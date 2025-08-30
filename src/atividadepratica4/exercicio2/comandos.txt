@@ -1,4 +1,4 @@
-*ENTRAR NA PASTA src
+*ENTRAR NA PASTA SRC
 cd src
 
 
