@@ -1,0 +1,6 @@
+*PARA COMPILAR TODOS ARQUIVOS
+javac -d . src/atividadepratica4/exercicio2/model/*.java src/atividadepratica4/exercicio2/view/*.java
+
+
+*PARA RODAR A MAIN
+java atividadepratica4.exercicio2.view.Main            
