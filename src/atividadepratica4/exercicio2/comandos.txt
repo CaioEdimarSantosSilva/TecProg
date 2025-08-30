@@ -1,5 +1,9 @@
+*ENTRAR NA PASTA src
+cd src
+
+
 *PARA COMPILAR TODOS ARQUIVOS
-javac -d . src/atividadepratica4/exercicio2/model/*.java src/atividadepratica4/exercicio2/view/*.java
+javac -d . atividadepratica4/exercicio2/model/*.java atividadepratica4/exercicio2/view/*.java
 
 
 *PARA RODAR A MAIN
