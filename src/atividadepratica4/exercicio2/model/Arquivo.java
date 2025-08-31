@@ -2,25 +2,14 @@ package atividadepratica4.exercicio2.model;
 
 public class Arquivo {
     public String nome;
-    public double tamanho;
-    public String permissoes;
-    public String tipoArquivo;
-    public double modificadores;
+    public String estencao;
 
-
-    public void criarArquivo(){
-        
+    public void enviarArquivo(){
+        System.out.println("O arquivo "+ nome + estencao + " foi enviado!");
     }
 
-    public void apagarArquivo(){
-
+    public void alterarArquivo(){
+        System.out.println("O arquivo "+ nome + estencao + " foi alterado!");
     }
-
-    public void editarArquivo(){
-
-    }
-
-
-
     
 }
