@@ -16,10 +16,6 @@ import atividadepratica4.exercicio2.model.Projeto;
 import atividadepratica4.exercicio2.model.RedeSocial;
 import atividadepratica4.exercicio2.model.Relatorio;
 import atividadepratica4.exercicio2.model.Senha;
-import atividadepratica4.exercicio2.model.SistemaOperacional;
-import atividadepratica4.exercicio2.model.Site;
-import atividadepratica4.exercicio2.model.Tarefa;
-import atividadepratica4.exercicio2.model.Usuario;
 
 public class Main {
     public static void main(String[] args) {
@@ -230,5 +226,7 @@ public class Main {
         Netflix.verficarSenha();
 
         System.out.println();
+
+        
     }
 }
