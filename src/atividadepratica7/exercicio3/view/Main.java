@@ -14,38 +14,37 @@ o sistema deverá exibir uma mensagem de boas-vindas. Caso contrário, deverá p
 O sistema também deve permitir fazer o logout. */
 
 import java.util.Scanner;
-
 import model.SistemaDeSeguranca;
 
 public class Main {
 
 	public static void main(String[] args) {
-			Scanner entrada = new Scanner(System.in);
+
+			Scanner scan = new Scanner(System.in);
+
 			SistemaDeSeguranca sistema = new SistemaDeSeguranca();
+
 	        boolean autenticado = false;
 	        System.out.println("Sistema de Login");
 
 	        while (!autenticado) {
-	            System.out.print("Usuário: ");
-	            String usuario = entrada.nextLine();
+	            System.out.print("Usuario: ");
+	            String usuario = scan.nextLine();
 
 	            System.out.print("Senha: ");
-	            String senha = entrada.nextLine();
+	            String senha = scan.nextLine();
 
 	            autenticado = sistema.login(usuario, senha);
 	        }
 
-	        System.out.println("\nBem-vindo, " + sistema.getUsuario() + "!");
+	        System.out.println("\nBem-vindo, " + sistema.getUsuario());
 
-	        System.out.print("\nDeseja fazer logout? (s/n): ");
-	        String opcao = entrada.nextLine();
+	        System.out.print("\nDeseja fazer sair?: ");
+	        String opcao = scan.nextLine();
 
-	        if (opcao.equalsIgnoreCase("s")) {
+	        if (opcao.equalsIgnoreCase("sim")) {
 	            sistema.logout();
-	        } else {
-	            System.out.println("Sessão mantida.");
-	        }
 
-	        entrada.close();
+	        scan.close();
 	}
 }
