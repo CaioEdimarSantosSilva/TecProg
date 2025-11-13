@@ -64,7 +64,7 @@ public class CadastroForm {
             return;
         }
 
-        Cliente cliente = new Cliente(nome, idade, sexo);
+        Cliente2 cliente = new Cliente2(nome, idade, sexo);
 
         resumoLabel.setText(cliente.retorna());
 

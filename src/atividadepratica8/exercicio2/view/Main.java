@@ -1,11 +1,11 @@
 package view;
 
-import model.Calculadora;
+import model.Calculadora2;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("=== EXERCÍCIO 2: SOBRECARGA DE MÉTODOS ===\n");
-        Calculadora calc = new Calculadora();
+        Calculadora2 calc = new Calculadora2();
         int resultado1 = calc.somar(5, 10);
         System.out.println("Resultado: " + resultado1 + "\n");
         int resultado2 = calc.somar(3, 7, 12);

@@ -1,14 +1,14 @@
 package model;
 
 public class Empresa {
-    private Cliente[] clientes;
+    private Cliente2[] clientes;
     private int qtdClientes;
     private Funcionario[] funcionarios;
     private int qtdFuncionarios;
     private double mediaSalarial;
 
     public Empresa() {
-        this.clientes = new Cliente[5];
+        this.clientes = new Cliente2[5];
         this.qtdClientes = 0;
         this.funcionarios = new Funcionario[10];
         this.qtdFuncionarios = 0;
@@ -19,7 +19,7 @@ public class Empresa {
         if (qtdClientes >= clientes.length) {
             return false;
         }
-        clientes[qtdClientes++] = new Cliente(nome, email);
+        clientes[qtdClientes++] = new Cliente2(nome, email);
         return true;
     }
 
@@ -62,7 +62,7 @@ public class Empresa {
     public double calcularMediaSalarial() {
         if (qtdFuncionarios == 0) return 0;
 
-        Calculadora calc = new Calculadora();
+        Calculadora2 calc = new Calculadora2();
 
         double soma = 0;
         for (int i = 0; i < qtdFuncionarios; i++) {
